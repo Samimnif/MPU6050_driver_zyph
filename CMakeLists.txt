@@ -15,11 +15,14 @@ set(OPENOCD "openocd")
 set(OPENOCD_DEFAULT_PATH "/usr/local/share/openocd/scripts")
 
 # Define project name
-project(lab3_part1)
+project(mpu6050_driver)
 
 # Add include directory 
 target_include_directories(app PRIVATE src/inc)
 
 # Add source files
-FILE(GLOB SRC_FILES "src/*.c")
-target_sources(app PRIVATE ${SRC_FILES})
+# FILE(GLOB SRC_FILES "src/*.c")
+target_sources(app PRIVATE
+    src/main.c
+    src/mpu6050.c
+)
