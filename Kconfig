@@ -1,0 +1,1 @@
+rsource "drivers/sensor/mpu6050/Kconfig"
